@@ -54,10 +54,25 @@ nav a:hover {
     color: #2980b9;
 }
 
-.hero {
+.welcome {
     text-align: center;
-    padding: 100px 20px;
-    background-color: #e6f7ff;
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    height: 10vh;
+}
+
+.welcome h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em; /* Increased font size */
+    margin-bottom: 10px;
+}
+
+.hero {
+    position: relative;
+    height: 66vh;
+    margin-top: 0;
+    overflow: hidden;
 }
 
 .hero h1 {
