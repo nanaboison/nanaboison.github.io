@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everything Dogs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+                <div class="logo-tagline">
+                    <img src="logo.jpg" alt="Everything Dogs Logo" class="logo">
+                    <div>
+                        <div class="website-name">Everything Dogs</div>
+                        <div class="tagline">Happy Tails Begin Here</div>
+                    </div>
+                </div>
+                <ul>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#contact">Call To Place An Order: 054 953 7442</a></li>
+                </ul>
+            
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Welcome to Everything Dogs</h1>
+            <p>Premium dog feed for a happy, healthy life.</p>
+            <div class="hero-slideshow">
+                <img src="dog_slide_1.jpg" alt="Hero Image 1" class="hero-image">
+                <img src="dog_slide_2.png" alt="Hero Image 2" class="hero-image">
+                <img src="dog_slide_3.jpeg" alt="Hero Image 3" class="hero-image">
+            </div>
+        </section>
+        <section id="products" class="products">
+            <h2>Top Products</h2>
+            <div class="product-list">
+                <a href="products.html#product1" class="product-item">
+                    <img src="products/paw_paw_1.jpg" alt="Product 1">
+                    <h3>Paw Paw Puppy Food</h3>
+                    <p>Lamb &amp; Rice - 15kg</p>
+                    <p>GHS650.00</p>
+                </a>
+                <a href="products.html#product2" class="product-item">
+                    <img src="products/paw_paw_2.jpg" alt="Product 2">
+                    <h3>Paw Paw Adult Food</h3>
+                    <p>Chicken - 15kg</p>
+                    <p>GHS650.00</p>
+                </a>
+                <a href="products.html#product3" class="product-item">
+                    <img src="products/mystic_1.jpg" alt="Product 3">
+                    <h3>Mystic Dog Food</h3>
+                    <p>Salmon - 17kg</p>
+                    <p>GHS800.00</p>
+                </a>
+                <a href="products.html#product4" class="product-item">
+                    <img src="products/dog_chow_1.jpg" alt="Product 4">
+                    <h3>Dog Chow</h3>
+                    <p>Chicken - 21.8kg (48Lb)</p>
+                    <p>GHS830</p>
+                </a>
+                <a href="products.html#product5" class="product-item">
+                    <img src="products/dog_chow_2.jpg" alt="Product 5">
+                    <h3>Dog Chow</h3>
+                    <p>Beef - 21.8kg (48Lb)</p>
+                    <p>GHS830</p>
+                </a>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Call To Place An Order</h2>
+            <div class="contact-info">
+                <p><strong>Phone:</strong> <a href="tel:+233549537442">054 953 7442</a></p>
+                <p><strong>Email:</strong> <a href="mailto:info@everythingdogs.com">info@everythingdogs.com</a></p>
+                <div class="delivery-message">
+                    Nationwide Delivery Available
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Everything Dogs</p>
+    </footer>
+    <script>
+        const heroImages = document.querySelectorAll('.hero-image');
+        let currentImage = 0;
+    
+        function showSlide(n) {
+            heroImages[currentImage].classList.remove('active');
+            currentImage = (n + heroImages.length) % heroImages.length;
+            heroImages[currentImage].classList.add('active');
+        }
+    
+        function nextSlide() {
+            showSlide(currentImage + 1);
+        }
+    
+        setInterval(nextSlide, 5000);
+    
+        heroImages[0].classList.add('active');
+    </script>
+</body>
+</html>
