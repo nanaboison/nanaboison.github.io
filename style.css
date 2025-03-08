@@ -56,36 +56,13 @@ nav a:hover {
 
 .welcome {
     text-align: center;
-    padding: 20px;
     background-color: #f9f9f9;
-    margin-bottom: 10px;
-    height: 10vh;
 }
 
 .welcome h1 {
     font-family: 'Playfair Display', serif;
     font-size: 3em; /* Increased font size */
     margin-bottom: 10px;
-}
-
-.hero {
-    position: relative;
-    height: 66vh;
-    margin-top: 0;
-    overflow: hidden;
-}
-
-.hero h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #2c3e50;
-}
-
-.hero p {
-    font-size: 1.1em;
-    color: #555;
-    max-width: 600px;
-    margin: 0 auto;
 }
 
 .products, .contact {
@@ -209,21 +186,8 @@ footer {
 }
 .hero {
     position: relative;
-    height: 66vh;
+    height: 60vh;
     text-align: center;
-    padding: 20px;
-}
-
-.hero h1 {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 0;
-}
-
-.hero p {
-    margin-top: 50px; /* Adjust as needed */
 }
 
 .hero-slideshow {
@@ -231,7 +195,7 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 80%; /* Adjust as needed */
+    height: 95%; /* Adjust as needed */
 }
 
 .hero-image {
