@@ -212,6 +212,22 @@ footer {
 .hero-image.active {
     opacity: 1; /* Fade in */
 }
+.customer-video {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+.customer-video h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    margin-bottom: 10px; /* Adjust spacing as needed */
+    color: #2c3e50; /* Adjust color as needed */
+}
+
+.customer-video video {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 450px; /* Added fixed height */
+}
 
 
 /* Responsive Design */
