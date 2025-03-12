@@ -269,6 +269,20 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+    .product-item {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 80%; /* Adjusted width to fit 5 items */
+        text-align: center;
+    }
+    .product-item h3 {
+        font-size: 1.5em; /* Reduced font size */
+    }
+
+    .product-item p {
+        font-size: 1.2em; /* Reduced font size */
+    }
     .product-grid {
         grid-template-columns: 1fr; /* Switch to single column */
     }
