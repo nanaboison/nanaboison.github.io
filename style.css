@@ -269,4 +269,7 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+    .product-grid {
+        grid-template-columns: 1fr; /* Switch to single column */
+    }
 }
