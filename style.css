@@ -24,6 +24,7 @@ nav {
     display: flex;
     justify-content: space-between; /* This is the key change */
     align-items: center;
+    flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
     padding: 10px 10px;
@@ -82,30 +83,61 @@ nav a:hover {
     flex-wrap: wrap;
     justify-content: center;
 }
+.product-list-products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* justify-content: center; */
+}
 
 .product-item {
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 9px;
+    min-width: 145px;
+    box-shadow: 0 4px 19px rgba(0, 0, 0, 0.1);
     padding: 10px; /* Reduced padding */
     margin: 10px; /* Reduced margin */
     width: 15%; /* Adjusted width to fit 5 items */
     text-align: center;
+    position: relative;
+}
+
+.product-item a{
+    text-decoration: none;
 }
 
 .product-item img {
     max-width: 100%;
-    height: 150px; /* Added fixed height */
+    height: 19vh; /* Added fixed height */
     margin-bottom: 10px;
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.product-item::before{
+    content: '';
+    z-index: 0;
+    bottom: 0;
+    left: 0;
+    height: 53%;
+    width: 100%;
+    position: absolute;
+    background-color: #2d5e079b;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .product-item h3 {
     margin-bottom: 5px; /* Reduced margin */
     font-size: 1em; /* Reduced font size */
+    position: relative;
+    color: white;
 }
 
 .product-item p {
     font-size: 0.9em; /* Reduced font size */
+    position: relative;
 }
 
 product-item button {
@@ -258,12 +290,23 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    nav ul{
+
+    }
     nav ul {
         flex-direction: column;
         align-items: center;
+        padding: 0;
+        margin: auto;
     }
     nav ul li {
         margin: 10px 0;
+    }
+    .product-item img{
+        height: 23vh;
+        object-fit: contain;
+        border-radius: 10px;
+        width: fit-content;
     }
     .product-list {
         flex-direction: column;
@@ -272,14 +315,16 @@ footer {
     .product-item {
         background-color: #fff;
         border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 19px #0000001a;
         width: 80%; /* Adjusted width to fit 5 items */
         text-align: center;
     }
     .product-item h3 {
         font-size: 1.5em; /* Reduced font size */
     }
-
+    .product-detail{
+        display: block;
+    }
     .product-item p {
         font-size: 1.2em; /* Reduced font size */
     }
